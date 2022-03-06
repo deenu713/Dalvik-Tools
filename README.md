@@ -1,6 +1,6 @@
-# Dalvik-BundleTool
+# Dalvik-BundleTool without installing java
 
-
+# No need to install Java 
 # Commands :- 
 
 In Termux 
