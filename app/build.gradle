@@ -25,7 +25,10 @@ android {
         abortOnError false
     }	
 	//For Java Version 1.8
-		
+	packagingOptions {
+    resources.excludes.add("META-INF/*")
+    
+}	
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
