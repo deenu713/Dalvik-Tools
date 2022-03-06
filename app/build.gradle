@@ -26,6 +26,7 @@ android {
     }	
 packagingOptions {
          exclude("META-INF/*.") 
+         exclude ("kotlin/internal/internal.kotlin_builtins")
       }
 	//For Java Version 1.8
 	
