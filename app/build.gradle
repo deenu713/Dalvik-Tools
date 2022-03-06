@@ -1,6 +1,6 @@
 apply plugin: 'com.android.application'
 //apply plugin: 'com.google.gms.google-services'  // Google Services Plugin
-
+apply plugin: 'kotlin-android'
 android {
     compileSdkVersion 32
     buildToolsVersion '32.0.0'
@@ -35,7 +35,8 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation 'org.jetbrains.kotlin:kotlin-compiler-embeddable:1.4.0'
+   implementation 'org.jetbrains.kotlin:kotlin-stdlib:1.5.0-M1'
+ implementation 'org.jetbrains.kotlin:kotlin-compiler-embeddable:1.4.0'
     implementation 'com.android.tools.build:bundletool:1.8.2'
    implementation 'org.eclipse.jdt.core.compiler:ecj:4.6.1'
    implementation 'com.android.tools.build:apksig:7.3.0-alpha05' 
