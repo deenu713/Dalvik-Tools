@@ -1,0 +1,39 @@
+apply plugin: 'com.android.application'
+//apply plugin: 'com.google.gms.google-services'  // Google Services Plugin
+
+android {
+    compileSdkVersion 32
+    buildToolsVersion '32.0.0'
+
+    defaultConfig {
+        applicationId "com.android.tools.build.bundletool"
+        minSdkVersion 21
+        targetSdkVersion 32
+        versionCode 1
+        versionName "1.0.1"
+	    }
+
+    buildTypes {
+       debug {
+        debuggable false
+    }
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+	lintOptions {
+        abortOnError false
+    }	
+	//For Java Version 1.8
+		
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+     }
+   }
+ }
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+	implementation 'com.android.tools.build:bundletool:1.8.2'
+	}
