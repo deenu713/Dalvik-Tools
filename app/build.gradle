@@ -35,6 +35,6 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation 'org.jetbrains.kotlin:kotlin-compiler-embeddable:1.4.0-dev-withExperimentalGoogleExtensions-20200720'
+    implementation 'org.jetbrains.kotlin:kotlin-compiler-embeddable:1.4.0'
    // implementation 'com.android.tools.build:bundletool:1.8.2'
 	}
